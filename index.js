@@ -41,10 +41,12 @@ function addNumbers(num1, num2) {
 */
 function makePersonObject(id, name, email) {
   let ourobj = {
-    Id : `${id}`,
-    Name : `${name}`,
-    Email : `${email}`
+    id : id,
+    name : name,
+    email : email
+
   }
+  return ourobj;
 }
 console.log(makePersonObject('2','Ali','ALiAli@Ali.Ali'))
 
@@ -61,8 +63,8 @@ console.log(makePersonObject('2','Ali','ALiAli@Ali.Ali'))
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(datagiven) {
-  return `hello, my name is ${obj.name}`
+function getName(dataGiven) {
+  return `hello, my name is ${dataGiven.name}`
 }
 
 /**
@@ -80,16 +82,15 @@ function getName(datagiven) {
 */
 function makeSmartPerson(name) {
   let obj = {
-    Name : `${name}`,
-    Sum : function(num1, num2){
+    name : name,
+    sum : function(num1, num2){
       return num1 + num2
     },
     speak: function(){
-        return `Hello, my name is ${name}`.
-        
+        return `Hello, my name is ${name}`
     }
   }
-  
+  return obj;
 }
 
 
