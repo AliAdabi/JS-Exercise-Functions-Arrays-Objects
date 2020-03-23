@@ -277,7 +277,7 @@ const addFive = (num) =>{
   num + 5;
 }
 const argTimesTwo = (num) =>{
-  num * 2
+  num * 2;
 }
 
 /**
